@@ -1,13 +1,16 @@
+body {
+    background-color: #080a0b;
+    color: white;
+}
+
 header {
-    width: 62%;
-    background-color: red;
+    background-color: rgb(117, 16, 16);
     position: relative;
     display: flex;
     padding: 15px;
     margin-top: 3%;
     flex-direction: row;
     justify-content: space-between;
-    border-bottom: #ccc;
 }
 
 header div ul {
@@ -15,6 +18,7 @@ header div ul {
     padding: 0%;
     list-style: none;
     margin-right: 15px;
+    text-decoration: white;
 }
 
 header div ul li {
@@ -32,8 +36,8 @@ header div ul li {
 
 .logo {
     color: blue;
-    margin-top: -5%;
-    text-decoration: red;
+    margin-top: -3%;
+    text-decoration: rgb(255, 254, 254);
     display: flex;
     position: relative;
     flex-direction: row;
@@ -98,4 +102,14 @@ header div ul li {
     float:right;
     margin-bottom: 10px;
     margin-right: 10px;
+}
+
+footer {
+    align-items: center;
+    padding-top: 100%;
+    display: flex;
+    text-align: center;
+    float: right;
+    color: white;
+
 }
