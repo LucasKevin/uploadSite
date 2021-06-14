@@ -21,6 +21,10 @@ header div ul {
     text-decoration: white;
 }
 
+.menu ul li a{
+    color: white;
+}
+
 header div ul li {
     display: flex;
     float: left;
