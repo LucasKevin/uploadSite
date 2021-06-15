@@ -2,9 +2,9 @@
 
     margin: 0;
     padding: 0;
-    
+
     }
-    
+
     ul{
         width: 880px;
         list-style: none;
@@ -13,20 +13,20 @@
         justify-content: space-between;
         
     }
-    
+
     .min{
         width: 200px;
         opacity: 10px;
         
     }
-    
+
     .lbox{
-    
+
         visibility: hidden;
         opacity: 0;
-    
+
     }
-    
+
     .lbox:target{
         opacity: 1;
         visibility: visible;
@@ -35,14 +35,14 @@
         top: 0;
         left: 0;
         background: rgba(10,10,10,.7);
-    
+
         position: fixed;
     }
     .box_img{
         width: 1000px;
         margin: 150px auto;
     }
-    
+
     .btn{
         color: #fff;
         font-family: 'Arial';
@@ -57,7 +57,7 @@
         left: 5%;
         top:45%
     }
-    
+
     #next{
         right: 5%;
         top:45%
@@ -69,7 +69,7 @@
     .box_img img{
         opacity: 0;
     }
-    
+
     .lbox:target .box_img img{
         opacity: 1;
         transition-duration: .4s linear;

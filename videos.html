@@ -1,145 +1,80 @@
 <!DOCTYPE html>
 <html lang="pt=br">
-<head>
-<meta charset="utf-8">
-<title>Galeria</title>
-<style>
+    <head>
+        <meta charset="utf-8">
+        <title>Galeria</title>
+        <link rel="stylesheet" href="assets/css/gallery/gallery.css">
+        <link rel='stylesheet' href='assets/css/styles.css'>
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    </head>
 
-*{
+    <body>
+        <header class="shadow">
+            <div class="logo">
+                <a href='index.html'>M.A</a>
+            </div>
+            <div>
+                <ul>
+                    <li><a href='home.html'>HOME</a>
+                    <li><a href='servicos.html'>SERVIÇOS</a>
+                    <li><a href='videos.html'>GALERIA</a></li>
+                    <li><a href='contato.html'>CONTATO</a></li>
+                </ul>
+            </div>
+        </header>
+        <ul>
+            <li><a href="#img1"><img src="imagens/galeria (1).jpg" class="min"></a></li>
+            <li><a href="#img2"><img src="imagens/galeria (2).jpg" class="min"></a></li>
+            <li><a href="#img3"><img src="imagens/galeria (3).jpg" class="min"></a></li>
+            <li><a href="#img4"><img src="imagens/galeria (5).jpg" class="min"></a></li>
+        </ul>
 
-margin: 0;
-padding: 0;
+        <div class="lbox" id="img1">
+            <div class="box_img">
+                <a href="" class="btn" id="prev">&#171;</a>
+                <a href="" class="btn" id="close">X</a>
+                <img src="imagens/galeria (1).jpg" style="
+            width: 800px;
+            height: 600px;
+            ">
+                <a href="#img2" class="btn" id="next">&#187;</a>
+            </div>
+        </div>
 
-}
-
-ul{
-    width: 880px;
-    list-style: none;
-    display: flex;
-    margin: 100px auto;
-    justify-content: space-between;
-    
-}
-
-.min{
-    width: 200px;
-    opacity: 10px;
-    
-}
-
-.lbox{
-
-    visibility: hidden;
-    opacity: 0;
-
-}
-
-.lbox:target{
-    opacity: 1;
-    visibility: visible;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: rgba(10,10,10,.7);
-
-    position: fixed;
-}
-.box_img{
-    width: 1000px;
-    margin: 150px auto;
-}
-
-.btn{
-    color: #fff;
-    font-family: 'Arial';
-    text-decoration: none;
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    font-size: 40px;
-    text-align: center;
-}
-#prev{
-    left: 5%;
-    top:45%
-}
-
-#next{
-    right: 5%;
-    top:45%
-}
-#close{
-    top:0;
-    right: 2%;
-}
-.box_img img{
-    opacity: 0;
-}
-
-.lbox:target .box_img img{
-    opacity: 1;
-    transition-duration: .4s linear;
-}
-
-</style>
-</head>
-</html>
-
-<bory>
-
-    <ul>
-        <li><a href="#img1"><img src="imagens/galeria (1).jpg" class="min"></a></li>
-        <li><a href="#img2"><img src="imagens/galeria (2).jpg" class="min"></a></li>
-        <li><a href="#img3"><img src="imagens/galeria (3).jpg" class="min"></a></li>
-        <li><a href="#img4"><img src="imagens/galeria (5).jpg" class="min"></a></li>
-    </ul>
-
-    <div class="lbox" id="img1">
-        <div class="box_img">
-            <a href="" class="btn" id="prev">&#171;</a>
-            <a href="" class="btn" id="close">X</a>
-            <img src="imagens/galeria (1).jpg" style="
+        <div class="lbox" id="img2">
+            <div class="box_img">
+                <a href="#img1" class="btn" id="prev">&#171;</a>
+                <a href="" class="btn" id="close">X</a>
+                <img src="imagens/galeria (6).jpg" style="
         width: 800px;
         height: 600px;
-        ">
-            <a href="#img2" class="btn" id="next">&#187;</a>
+    ">
+                <a href="#img3" class="btn" id="next">&#187;</a>
+            </div>
         </div>
-    </div>
 
-    <div class="lbox" id="img2">
-        <div class="box_img">
-            <a href="#img1" class="btn" id="prev">&#171;</a>
-            <a href="" class="btn" id="close">X</a>
-            <img src="imagens/galeria (6).jpg" style="
-    width: 800px;
-    height: 600px;
-">
-            <a href="#img3" class="btn" id="next">&#187;</a>
+        <div class="lbox" id="img3">
+            <div class="box_img">
+                <a href="#img2" class="btn" id="prev">&#171;</a>
+                <a href="" class="btn" id="close">X</a>
+                <img src="imagens/galeria (3).jpg" style="
+        width: 800px;
+        height: 600px;
+    ">
+                <a href="#img4" class="btn" id="next">&#187;</a>
+            </div>
         </div>
-    </div>
 
-    <div class="lbox" id="img3">
-        <div class="box_img">
-            <a href="#img2" class="btn" id="prev">&#171;</a>
-            <a href="" class="btn" id="close">X</a>
-            <img src="imagens/galeria (3).jpg" style="
-    width: 800px;
-    height: 600px;
-">
-            <a href="#img4" class="btn" id="next">&#187;</a>
+        <div class="lbox" id="img4">
+            <div class="box_img">
+                <a href="#img3" class="btn" id="prev">&#171;</a>
+                <a href="" class="btn" id="close">X</a>
+                <img src="imagens/galeria (5).jpg" style="
+        width: 800px;
+        height: 600px;
+    ">
+                <a href="#img1" class="btn" id="next">&#187;</a>
+            </div>
         </div>
-    </div>
-
-    <div class="lbox" id="img4">
-        <div class="box_img">
-            <a href="#img3" class="btn" id="prev">&#171;</a>
-            <a href="" class="btn" id="close">X</a>
-            <img src="imagens/galeria (5).jpg" style="
-    width: 800px;
-    height: 600px;
-">
-            <a href="#img1" class="btn" id="next">&#187;</a>
-        </div>
-    </div>
-</bory>
+    </body>
+</html>
